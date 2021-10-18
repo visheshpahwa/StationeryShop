@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stationery</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  </head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    body {
+      font-family: "Comfortaa", cursive;
+      margin: 0px;
+      padding: 0px;
+      background: url("images/Bg.png");
+    }
+    .left {
+      /* border: 2px solid red; */
+      display: inline-block;
+      position: absolute;
+      left: 25px;
+      top: 20px;
+      text-align: center;
+      font-size: 25px;
+      color: white;
+    }
+    .mid {
+      /* border: 2px solid greenyellow; */
+      display: block;
+      width: 50%;
+      margin: 20px auto;
+    }
+    .right {
+      /* border: 2px solid cyan; */
+      display: inline-block;
+      position: absolute;
+      right: 25px;
+      top: 20px;
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+    }
+    .navbar li a {
+      color: #9f6c9f;
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: 25px;
+      padding: 10px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: #dfd7e1;
+    }
+    .btn {
+      font-family: "Comfortaa", cursive;
+      background-color: black;
+      color: white;
+      margin: 0px 10px;
+      padding: 5px 15px;
+      border: 3px solid gray;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: gray;
+    }
+    img {
+      margin: 0px 50px;
+    }
+    .left div {
+      text-align: center;
+      font-size: 25px;
+    }
+    .container {
+      margin: 150px 50px;
+      padding: 50px 50px;
+      border: 5px solid black;
+      border-radius: 25px;
+      width: 50%;
+    }
+    .form-group input {
+      font-size: 20px;
+      margin: 5px auto;
+      display: block;
+      border-radius: 5px;
+      padding: 10px 108px;
+      text-align: center;
+      font-family: "Comfortaa", cursive;
+    }
+    .container h1 {
+      /* background-color: brown; */
+      text-align: center;
+      color: white;
+      /* border: 3px solid black; */
+      /* border-radius: 8px; */
+    }
+    .container button {
+      display: block;
+      width: 40%;
+      margin: auto;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">Email Us</button>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Stationery Items</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="left">
+        <img src="/images/logo.jpeg" alt="" />
+        <div>Stationery</div>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Visit Best Stationery Shop Now!!</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <input type="number" name="" placeholder="Enter your Number" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
